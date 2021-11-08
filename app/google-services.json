@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "237819687127",
+    "project_id": "engineering360-1e4b8",
+    "storage_bucket": "engineering360-1e4b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237819687127:android:8308702e2153898bc78092",
+        "android_client_info": {
+          "package_name": "com.nutan.engineering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237819687127-lfakie3314r7i9h6stom17fl6d63dmp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-9aDKgVqjSAqhH-HKSmADAG6hqELNJ7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237819687127-lfakie3314r7i9h6stom17fl6d63dmp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
