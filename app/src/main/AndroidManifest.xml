@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Engineering360">
         <activity
+            android:name=".PlanYourStudies"
+            android:exported="true" />
+        <activity
+            android:name=".FindBestEngClg"
+            android:exported="true" />
+        <activity
+            android:name=".CareerCounselling"
+            android:exported="true" />
+        <activity
             android:name=".OTPverification"
             android:exported="true" />
         <activity

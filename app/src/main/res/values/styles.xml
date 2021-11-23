@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
 
     <style name="GenericDialogTheme">
@@ -26,5 +26,18 @@
         <item name="android:textColor">@color/md_white_1000</item>
         <item name="android:padding">3dp</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MainMyToolbarStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/md_white_1000</item>
+        <item name="actionMenuTextColor">@color/md_white_1000</item>
+        <item name="android:textColorPrimary">@color/md_white_1000</item>
+        <item name="android:fontFamily">@font/hemi_head</item>
+        <item name="android:textSize">22sp</item>
+        <item name="buttonGravity">center_vertical</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:titleTextColor" tools:targetApi="m">@color/md_white_1000</item>
+        <item name="android:colorControlNormal">@color/md_white_1000</item>
+        <item name="android:textColorSecondary">@color/md_white_1000</item>
     </style>
 </resources>
