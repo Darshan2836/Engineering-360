@@ -1,4 +1,4 @@
-package com.nutan.engineering.Extras;
+package com.nutan.engineering;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -7,13 +7,10 @@ import android.text.Editable;
 import android.util.AttributeSet;
 import android.view.ActionMode;
 import android.view.View;
-import android.widget.EditText;
 
 import androidx.appcompat.widget.AppCompatEditText;
 
-import com.nutan.engineering.R;
-
-class OtpEditText extends AppCompatEditText {
+public class OtpEditText extends AppCompatEditText {
     private float mSpace = 24; //24 dp by default, space between the lines
     private float mNumChars = 4;
     private float mLineSpacing = 8; //8dp by default, height of the text from our lines

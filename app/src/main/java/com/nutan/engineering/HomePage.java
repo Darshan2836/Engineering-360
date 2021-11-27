@@ -96,7 +96,7 @@ public class HomePage extends AppCompatActivity {
         accountHeader = new AccountHeaderBuilder()
                 .addProfiles(profileDrawerItem)
                 .withActivity(this)
-                .withHeaderBackground(R.color.colorPrimaryDark)
+                .withHeaderBackground(R.color.colorAccent)
                 .withTextColor(getResources().getColor(R.color.md_white_1000))
                 .withHeightDp(180)
                 .withSelectionListEnabled(false)
@@ -136,7 +136,7 @@ public class HomePage extends AppCompatActivity {
                                 drawer.closeDrawer();
                                 return true;
 
-                            case 12:
+                            case 4:
                                 //logout
                                 new GenericDialog.Builder(HomePage.this)
                                         .setCancelable(false)

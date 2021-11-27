@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CareerCounsellingModule.EngineeringRightDegreeQuiz">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/enggRightDegreeQuiz_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/MyToolbarStyle"
+        app:title="Quiz"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_below="@id/enggRightDegreeQuiz_id"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/questionCounter_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/5"
+            android:textSize="20dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/question_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you like Mathematics ?"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="25dp">
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/yesButton_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="@color/green">
+            </Button>
+            <Button
+                android:id="@+id/noButton_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:backgroundTint="@color/md_red_400">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

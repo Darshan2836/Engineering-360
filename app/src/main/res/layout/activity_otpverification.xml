@@ -69,7 +69,7 @@
     </TextView>
 
     <!--Enter Pin Here-->
-    <androidx.appcompat.widget.AppCompatEditText
+    <com.nutan.engineering.OtpEditText
         android:id="@+id/et_otp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

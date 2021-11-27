@@ -30,15 +30,15 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
     implementation 'com.google.firebase:firebase-auth:21.0.1'
     implementation 'com.github.stfalcon:smsverifycatcher:0.3.2'
     implementation 'com.google.firebase:firebase-firestore:24.0.0'
 
     implementation "com.mikepenz:materialdrawer:6.1.2"
-    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.annotation:annotation:1.3.0'
     implementation "com.mikepenz:materialize:1.2.1"
     implementation 'com.mikepenz:google-material-typeface:3.0.1.2.original@aar'
 

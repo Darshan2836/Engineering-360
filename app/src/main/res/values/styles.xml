@@ -11,6 +11,15 @@
         <item name="android:fontFamily">@font/nunito</item>
     </style>
 
+    <style name="MyToolbarStyle" parent="Theme.AppCompat.Light">
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+        <item name="buttonGravity">center_vertical</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:titleTextColor" tools:targetApi="m">@color/md_white_1000</item>
+        <item name="android:colorControlNormal">@color/md_white_1000</item>
+        <item name="android:textColorSecondary">@color/md_white_1000</item>
+    </style>
+
     <style name="NoBtn" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:text">Cancel</item>
         <item name="android:background">@color/md_red_800</item>

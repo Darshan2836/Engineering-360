@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PlanYourStudies">
+    tools:context=".CareerCounsellingModule.PostGrad">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/planYourStudies_id"
+        android:id="@+id/postGrad_id"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         android:theme="@style/MyToolbarStyle"
-        app:title="Plan Your Studies"
+        app:title="Post Graduation"
         app:titleTextColor="@color/white" />
-
 </RelativeLayout>

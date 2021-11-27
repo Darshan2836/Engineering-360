@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CareerCounsellingModule.EngineeringRightDegree">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/enggRightDegree_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/MyToolbarStyle"
+        app:title="Is Engineering for you ?"
+        app:titleTextColor="@color/white" />
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/enggRightDegree_id">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enggRightDegree_id"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Is Engineering Right degree for you ?"
+            android:textColor="@color/black"
+            android:textSize="23dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:text="In simple words, if your aptitude or inherent skills are suitable for career in medicine or arts or say architecture, but if you choose to do “Engineering” either due to certain reasons (like family pressure, because your friends are doing it), you can certainly complete the degree but the chances that you become a “Quality” Engineer who actually solve the real time problems in this world are very low. So the first step is find whether are you really born to become Engineer. Please appear for questionnaire to check if are you really born to do Engineering.">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lets take a quick Quiz"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/black"
+            android:textSize="24dp"></TextView>
+
+        <Button
+            android:id="@+id/startButton_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cornerbutton"
+            android:text="Start"
+            android:fontFamily="@font/nunito"
+            android:textAllCaps="false"
+            android:layout_marginTop="40dp">
+        </Button>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
