@@ -114,6 +114,18 @@
                     android:visibility="gone"
                     android:text="No" />
             </LinearLayout>
+
+            <Button
+                android:id="@+id/nxtBtn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:text="Next"
+                android:layout_gravity="right"
+                android:fontFamily="@font/nunito"
+                android:textAllCaps="false"
+                android:layout_marginTop="40dp">
+            </Button>
         </LinearLayout>
     </ScrollView>
 
