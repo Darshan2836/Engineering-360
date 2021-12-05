@@ -13,6 +13,7 @@ import android.view.View;
 import com.nutan.engineering.CareerCounsellingModule.ChooseBranch;
 import com.nutan.engineering.CareerCounsellingModule.EngineeringRightDegree;
 import com.nutan.engineering.CareerCounsellingModule.PostGrad;
+import com.nutan.engineering.CareerCounsellingModule.UnderstandingStreamActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,6 +29,10 @@ public class CareerCounselling extends AppCompatActivity {
 
     @BindView(R.id.branch_id)
     CardView branch;
+
+
+    @BindView(R.id.understandingStream_id)
+    CardView understandingStream;
 
     @BindView(R.id.postGrad_id)
     CardView postGrad;
@@ -58,6 +63,14 @@ public class CareerCounselling extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(CareerCounselling.this, PostGrad.class));
+            }
+        });
+
+
+        understandingStream.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CareerCounselling.this, UnderstandingStreamActivity.class));
             }
         });
 
