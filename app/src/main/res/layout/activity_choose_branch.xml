@@ -14,5 +14,53 @@
         android:theme="@style/MyToolbarStyle"
         app:title="Choose Branch"
         app:titleTextColor="@color/white" />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chooseBranch_id">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:paddingBottom="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enggRightDegree_id"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Which branch to choose ?"
+                android:textColor="@color/black"
+                android:textSize="23dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Once a candidate qualifies for the entrance examination, it is time to select the best suitable branch as per your inherent skills and interests.  The choice of stream mainly depends on the interest of the candidate. For example, suppose a candidate has an interest in electronics gadgets, wireless communication or robotics. In that case, he/she can be an Electronics and Telecommunication engineer. On the other hand, if an engineering aspirant is fascinated by machines, then mechanical engineering is the right stream for him/her.   In earlier days, since there were a limited number of colleges, selecting a stream for oneself was easy. However, considering  a vast increase in the number of engineering colleges these days as well as the vast possibilities available for stream selection, one may get confused about the stream selection.Many streams may look attractive but the student may not be aware of the best-suited stream for him/her.   To assist students in the selection of engineering streams, we have created a quiz. At the end of the quiz, you will get a detailed report just customized for you.  "
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lets take a quick Quiz"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito"
+                android:textColor="@color/black"
+                android:textSize="24dp"></TextView>
+
+            <Button
+                android:id="@+id/startButton_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cornerbutton"
+                android:text="Start"
+                android:fontFamily="@font/nunito"
+                android:textAllCaps="false"
+                android:layout_marginTop="40dp">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

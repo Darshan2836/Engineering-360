@@ -2,6 +2,7 @@ package com.nutan.engineering;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,6 +19,9 @@ import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
+import com.nutan.engineering.CareerCounsellingModule.ChooseBranch;
+import com.nutan.engineering.CareerCounsellingModule.EngineeringRightDegree;
+import com.nutan.engineering.CareerCounsellingModule.PostGrad;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -45,6 +49,14 @@ public class HomePage extends AppCompatActivity {
     @BindView(R.id.mainToolbar_id)
     Toolbar toolbar;
 
+    @BindView(R.id.careerCounselling_id)
+    CardView careerCounselling;
+
+    @BindView(R.id.enggCollege_id)
+    CardView enggCollege;
+
+    @BindView(R.id.plan_id)
+    CardView plan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,8 +88,28 @@ public class HomePage extends AppCompatActivity {
 
 
         buildDrawer();
-       
 
+
+        careerCounselling.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomePage.this, CareerCounselling.class));
+            }
+        });
+
+        enggCollege.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomePage.this, FindBestEngClg.class));
+            }
+        });
+
+        plan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomePage.this, PlanYourStudies.class));
+            }
+        });
 
     }
 
@@ -86,10 +118,8 @@ public class HomePage extends AppCompatActivity {
 
 
 
-        PrimaryDrawerItem orders = new PrimaryDrawerItem().withName("Career Counselling").withSelectable(false);
-        PrimaryDrawerItem returnedOrders = new PrimaryDrawerItem().withName("Find best engineering college for you").withSelectable(false);
-        PrimaryDrawerItem products = new PrimaryDrawerItem().withName("Plan your Engineering studies").withSelectable(false);
-        PrimaryDrawerItem logout = new PrimaryDrawerItem().withName("Logout").withSelectable(false);
+
+        PrimaryDrawerItem logout = new PrimaryDrawerItem().withIcon(R.drawable.logout).withName("Logout").withSelectable(false);
 
         ProfileDrawerItem profileDrawerItem = new ProfileDrawerItem().withEmail(userMobileNo).withIcon(R.drawable.ic_baseline_account_circle_24);
 
@@ -107,7 +137,7 @@ public class HomePage extends AppCompatActivity {
                 .withAccountHeader(accountHeader)
                 .withActivity(this)
                 .withToolbar(toolbar)
-                .addDrawerItems(orders,returnedOrders,products,logout)
+                .addDrawerItems(logout)
                 .withDisplayBelowStatusBar(true)
                 .withTranslucentStatusBar(false)
                 .withActionBarDrawerToggleAnimated(false)
@@ -118,25 +148,6 @@ public class HomePage extends AppCompatActivity {
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
                         switch (position){
                             case 1:
-                                //orders
-                                Intent ordersIntent = new Intent(HomePage.this, CareerCounselling.class);
-                                startActivity(ordersIntent);
-                                drawer.closeDrawer();
-                                return true;
-                            case 2:
-                                //returnedOrders
-                                Intent returnedOrders = new Intent(HomePage.this,FindBestEngClg.class);
-                                startActivity(returnedOrders);
-                                drawer.closeDrawer();
-                                return true;
-                            case 3:
-                                //products
-                                Intent products = new Intent(HomePage.this,PlanYourStudies.class);
-                                startActivity(products);
-                                drawer.closeDrawer();
-                                return true;
-
-                            case 4:
                                 //logout
                                 new GenericDialog.Builder(HomePage.this)
                                         .setCancelable(false)

@@ -47,6 +47,8 @@ public class EngineeringRightDegreeQuiz extends AppCompatActivity {
 
         while (count<5)
         {
+
+
             int finalCount = count;
             yesButton.setOnClickListener(new View.OnClickListener() {
                 @Override
