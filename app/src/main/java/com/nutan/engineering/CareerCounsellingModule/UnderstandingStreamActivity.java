@@ -11,9 +11,9 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import com.nutan.engineering.R;
-import com.nutan.engineering.webViews.compWebViewAct;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class UnderstandingStreamActivity extends AppCompatActivity {
 
@@ -42,17 +42,56 @@ public class UnderstandingStreamActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_understanding_stream);
+        ButterKnife.bind(this);
 
         comp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=avZTQgLs064")));
-            //Intent intent = new Intent(UnderstandingStreamActivity.this,compWebViewAct.class);
-            //startActivity(intent);
+
             }
         });
 
+        it.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=zKEwYgLW9TU")));
+
+            }
+        });
+
+        electrical.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=QQewdCJTcIU")));
+
+            }
+        });
+
+        entc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=o3nmCfgqCz4")));
+
+            }
+        });
+        civil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=bFljMHTQ1QY")));
+
+            }
+        });
+
+        mech.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=W74y1RxN6BA")));
+
+            }
+        });
     }
 }

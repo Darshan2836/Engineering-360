@@ -19,7 +19,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/enginerring_id"
         android:layout_width="match_parent"
-        android:layout_height="108dp"
+        android:layout_height="118dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -75,7 +75,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/branch_id"
         android:layout_width="match_parent"
-        android:layout_height="108dp"
+        android:layout_height="118dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -131,7 +131,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/postGrad_id"
         android:layout_width="match_parent"
-        android:layout_height="108dp"
+        android:layout_height="118dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -188,7 +188,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/understandingStream_id"
         android:layout_width="match_parent"
-        android:layout_height="108dp"
+        android:layout_height="118dp"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -200,12 +200,13 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@drawable/education"
+                android:layout_height="match_parent"
+                android:src="@drawable/understandingstreamicon"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_marginRight="10dp">
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter">
             </androidx.appcompat.widget.AppCompatImageView>
             <LinearLayout
                 android:layout_width="match_parent"
