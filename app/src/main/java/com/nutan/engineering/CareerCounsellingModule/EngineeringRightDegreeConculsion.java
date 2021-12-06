@@ -40,7 +40,7 @@ public class EngineeringRightDegreeConculsion extends AppCompatActivity {
             if(result.get(i)!= null)
             {
                 resultTxt.append(result.get(i));
-                resultTxt.append("\n");
+                resultTxt.append("\n \n \n");
             }
         }
 
