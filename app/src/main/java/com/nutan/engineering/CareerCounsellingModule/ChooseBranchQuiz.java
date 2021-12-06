@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.nutan.engineering.R;
 
@@ -46,6 +47,7 @@ public class ChooseBranchQuiz extends AppCompatActivity {
 
     public int it=0,comp =0,elec=0,entc=0,mech=0,civil=0;
     public int count=1;
+    boolean selected = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +56,6 @@ public class ChooseBranchQuiz extends AppCompatActivity {
 
 
         ButterKnife.bind(this);
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ArrayList<ChooseBranchQuizModal> quiz = new ArrayList<>();
         getQuestions(quiz);
@@ -65,8 +65,15 @@ public class ChooseBranchQuiz extends AppCompatActivity {
         nxtBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                count++;
-                setQuestion(quiz,count);
+                if(selected == true) {
+                    selected = false;
+                    count++;
+                    setQuestion(quiz, count);
+                }
+                else
+                {
+                    Toast.makeText(ChooseBranchQuiz.this,"Choose atleast one option",Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -81,6 +88,7 @@ public class ChooseBranchQuiz extends AppCompatActivity {
                 else if(count==12){elec+=5;}else if(count==13){comp+= 5; it+= 5;}else if(count==14){}else if(count==15){comp+= 10; it+= 10;}
                 compBtn.setAlpha(0.5F);
                 compBtn.setEnabled(false);
+                selected = true;
 
             }
         });
@@ -93,6 +101,7 @@ public class ChooseBranchQuiz extends AppCompatActivity {
                 else if(count==12){entc+=5;}else if(count==13){elec+=5;}else if(count==14){comp+= 5; it+= 5;}else if(count==15){elec+=10;}
                 itBtn.setAlpha(0.5F);
                 itBtn.setEnabled(false);
+                selected = true;
             }
         });
         elecBtn.setOnClickListener(new View.OnClickListener() {
@@ -103,6 +112,7 @@ public class ChooseBranchQuiz extends AppCompatActivity {
                 else if(count==12){comp+= 5; it+= 5;}else if(count==13){entc+=5;}else if(count==14){elec+=5; entc+=5;}else if(count==15){entc+=10;}
                 elecBtn.setAlpha(0.5F);
                 elecBtn.setEnabled(false);
+                selected = true;
             }
         });
         entcBtn.setOnClickListener(new View.OnClickListener() {
@@ -113,6 +123,7 @@ public class ChooseBranchQuiz extends AppCompatActivity {
                 else if(count==12){civil+=5;}else if(count==13){civil+=5;}else if(count==14){civil+=5;}else if(count==15){civil+=10;}
                 entcBtn.setAlpha(0.5F);
                 entcBtn.setEnabled(false);
+                selected = true;
             }
         });
         civilBtn.setOnClickListener(new View.OnClickListener() {
@@ -123,6 +134,7 @@ public class ChooseBranchQuiz extends AppCompatActivity {
                 else if(count==12){mech+=5;}else if(count==13){mech+=5;}else if(count==14){mech+=5;}else if(count==15){mech+=10;}
                 civilBtn.setAlpha(0.5F);
                 civilBtn.setEnabled(false);
+                selected = true;
             }
         });
         mechBtn.setOnClickListener(new View.OnClickListener() {
@@ -133,6 +145,7 @@ public class ChooseBranchQuiz extends AppCompatActivity {
                 else if(count==12){}else if(count==13){}else if(count==14){}else if(count==15){}
                 mechBtn.setAlpha(0.5F);
                 mechBtn.setEnabled(false);
+                selected = true;
             }
         });
 
@@ -147,12 +160,12 @@ public class ChooseBranchQuiz extends AppCompatActivity {
             intent.putExtra("it", it);
             intent.putExtra("elec", elec);
             intent.putExtra("entc", entc);
-            intent.putExtra("civil ", civil);
+            intent.putExtra("civil", civil);
             intent.putExtra("mech", mech);
             startActivity(intent);
             finish();
         }
-        else {
+        else{
             compBtn.setAlpha(1);
             compBtn.setEnabled(true);
             itBtn.setAlpha(1);

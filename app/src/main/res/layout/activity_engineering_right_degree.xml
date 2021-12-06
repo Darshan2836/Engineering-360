@@ -34,7 +34,7 @@
             android:fontFamily="@font/nunito_semibold"
             android:text="Is Engineering Right degree for you ?"
             android:textColor="@color/black"
-            android:textSize="23dp"></TextView>
+            android:textSize="23dp" />
 
         <TextView
             android:layout_width="wrap_content"

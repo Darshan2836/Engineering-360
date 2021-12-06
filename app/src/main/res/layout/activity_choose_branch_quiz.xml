@@ -17,7 +17,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/chooseBranchQuiz_id">
 
         <LinearLayout
@@ -122,8 +122,9 @@
                 android:background="@color/black"
                 android:text="Next"
                 android:layout_gravity="right"
-                android:fontFamily="@font/nunito"
+                android:fontFamily="@font/nunito_semibold"
                 android:textAllCaps="false"
+                android:layout_marginBottom="40dp"
                 android:layout_marginTop="40dp">
             </Button>
         </LinearLayout>
