@@ -22,6 +22,9 @@ public class EngineeringRightDegreeConculsion extends AppCompatActivity {
     @BindView(R.id.result_id)
     TextView resultTxt;
 
+    @BindView(R.id.resultId)
+    TextView resultCount;
+
     @BindView(R.id.homePageBtn_id)
     Button homePageBtn;
 
@@ -34,6 +37,7 @@ public class EngineeringRightDegreeConculsion extends AppCompatActivity {
         ButterKnife.bind(this);
 
         ArrayList<String> result = (ArrayList<String>) getIntent().getSerializableExtra("result");
+        int count = getIntent().getIntExtra("resultCount",0);
 
         for(int i=0;i<result.size();i++)
         {
@@ -44,6 +48,14 @@ public class EngineeringRightDegreeConculsion extends AppCompatActivity {
             }
         }
 
+        if(count>=6)
+        {
+            resultCount.setText("You can choose engineering");
+        }
+        else
+        {
+            resultCount.setText("You can't choose engineering");
+        }
 
         homePageBtn.setOnClickListener(new View.OnClickListener() {
             @Override

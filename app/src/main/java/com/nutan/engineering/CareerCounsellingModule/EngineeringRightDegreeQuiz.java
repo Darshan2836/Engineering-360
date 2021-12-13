@@ -37,6 +37,7 @@ public class EngineeringRightDegreeQuiz extends AppCompatActivity {
 
     public ArrayList<String> finalResult = new ArrayList<>();
     public int count =1;
+    public int resultCount=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,7 @@ public class EngineeringRightDegreeQuiz extends AppCompatActivity {
 
                 finalResult.add(result.get(count-1).getAns1());
                 count++;
+                resultCount++;
                 setQuestion(quiz,count);
             }
         });
@@ -101,6 +103,7 @@ public class EngineeringRightDegreeQuiz extends AppCompatActivity {
         {
             Intent intent = new Intent(EngineeringRightDegreeQuiz.this,EngineeringRightDegreeConculsion.class);
             intent.putExtra("result", finalResult);
+            intent.putExtra("resultCount",resultCount);
             startActivity(intent);
             finish();
         }
