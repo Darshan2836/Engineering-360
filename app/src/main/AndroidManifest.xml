@@ -14,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Engineering360">
         <activity
+            android:name=".addCollege.AddCollegeQuiz"
+            android:exported="true" />
+        <activity
+            android:name=".AddCollege"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity2"
             android:exported="true" />
         <activity
