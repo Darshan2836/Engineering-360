@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AddCollege">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/enggRightDegree_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/MyToolbarStyle"
+        app:title="Is Engineering for you ?"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enggRightDegree_id">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:paddingBottom="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enggRightDegree_id"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="COLLEGE QUALITY CHECKLIST "
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:text="DURING THE ENGINEERING ADMISSION PROCESS, STUDENTS VISIT DIFFERENT COLLEGES. MANY
+TIMES, THEY DO NOT KNOW HOW TO ACCESS THE QUALITY OF COLLEGE. THEREFORE, WE HAVE
+PREPARED A QUESTIONARIES TO EVALUATE THE PERFORMANCE OF ANY PARTICULAR COLLEGE
+OVER THE PAST FEW YEARS. STUDENTS ARE ADVISED TO VISIT THE COLLEGE AND ASK THESE
+QUESTIONS TO THE COLLEGE OFFICIALS. BASED ON SCORES RECEIVED FOR DIFFERENT COLLEGES,
+STUDENTS CAN EASILY ACCESS AND COMPARE THE QUALITY OF DIFFERENT ENGINEERING
+COLLEGES. CLICK “PROCEED” TO CONTINUE"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lets take a quick Quiz"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito"
+                android:textColor="@color/black"
+                android:textSize="24dp"></TextView>
+
+            <Button
+                android:id="@+id/procced_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cornerbutton"
+                android:text="Proceed"
+                android:textSize="15sp"
+                android:fontFamily="@font/nunito"
+                android:textAllCaps="false"
+                android:layout_marginTop="30dp">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
