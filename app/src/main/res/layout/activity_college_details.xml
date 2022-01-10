@@ -6,4 +6,319 @@
     android:layout_height="match_parent"
     tools:context=".CollegeDetails">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/productPageToolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/MyToolbarStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="College Details"
+        app:titleTextColor="@color/white"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/productPageScrollView_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productPageToolbar_id">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/productPageLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/productPageProgressBar_id"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/primary"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/productPageImageSlider_id"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/md_white_1000"
+                android:paddingTop="10dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:sliderAnimationDuration="300"
+                app:sliderAutoCycleDirection="right"
+                app:sliderAutoCycleEnabled="false"
+                app:sliderCircularHandlerEnabled="true"
+                app:sliderIndicatorAnimationDuration="300"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorRadius="1dp"
+                app:sliderIndicatorSelectedColor="#5a5a5a"
+                app:sliderIndicatorUnselectedColor="#fff"
+                app:sliderScrollTimeInSec="2"
+                app:sliderStartAutoCycle="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productPageDetailsTitle_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="College Details"
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productPageImageSlider_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productPageNameText_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito"
+                android:text="Name :"
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productPageDetailsTitle_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/collegeName_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/nunito"
+                android:text=""
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productPageNameText_id"
+                app:layout_constraintTop_toTopOf="@+id/productPageNameText_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productPageProductIdText_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nunito"
+                android:text="Address :"
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/collegeName_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/collegeAddress_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/nunito"
+                android:text=""
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/productPageProductIdText_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productPageProductIdText_id"
+                app:layout_constraintTop_toTopOf="@+id/productPageProductIdText_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productPageProductTypeText_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito"
+                android:text="Average CET Cutoff :"
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productPageProductIdText_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/collegeCET_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/nunito"
+                android:text=""
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/productPageProductTypeText_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productPageProductTypeText_id"
+                app:layout_constraintTop_toTopOf="@+id/productPageProductTypeText_id" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productPageBookTypeText_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito"
+                android:text="Locality :"
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/collegeCET_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/collegeLocality_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/nunito"
+                android:text=""
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/productPageBookTypeText_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productPageBookTypeText_id"
+                app:layout_constraintTop_toTopOf="@+id/productPageBookTypeText_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productPageAmountText_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito"
+                android:text="Average Fees :"
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productPageBookTypeText_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/collegeFees_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/nunito"
+                android:text=""
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/productPageAmountText_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productPageAmountText_id"
+                app:layout_constraintTop_toTopOf="@+id/productPageAmountText_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productPageRatingText_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito"
+                android:text="Placement :"
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productPageAmountText_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/collegePlacement_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/nunito"
+                android:text=""
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/productPageRatingText_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/productPageRatingText_id"
+                app:layout_constraintTop_toTopOf="@+id/productPageRatingText_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productPageProductDescriptionTitle_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Branches"
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productPageRatingText_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/collegeBranches_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/nunito"
+                android:text=""
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productPageProductDescriptionTitle_id" />
+            
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/productPageProductDetailsTitle_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Description"
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/collegeBranches_id" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/collegeDetails_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/nunito"
+                android:text=""
+                android:textColor="@color/textColorDark"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productPageProductDetailsTitle_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

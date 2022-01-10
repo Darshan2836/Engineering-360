@@ -91,7 +91,7 @@ public class FindBestCollegeAdapter extends RecyclerView.Adapter<FindBestCollege
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: CLicked");
-                sendToCollegeDetails(model);
+                sendToCollegeDetails(collegeName);
             }
         });
 
@@ -101,9 +101,9 @@ public class FindBestCollegeAdapter extends RecyclerView.Adapter<FindBestCollege
                 .into(holder.Image);
     }
 
-    private void sendToCollegeDetails(CollegeModal orderDetails) {
+    private void sendToCollegeDetails(String collegeName) {
         Intent orderExploreIntent = new Intent(context, CollegeDetails.class);
-        orderExploreIntent.putExtra("orderDetails", (Serializable) orderDetails);
+        orderExploreIntent.putExtra("CollegeName", collegeName);
         context.startActivity(orderExploreIntent);
 //        ((Activity)context).finish();
     }

@@ -9,6 +9,7 @@
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/drawable-v24/rectangle_green.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/drawable/cornerbutton.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/font/nunito.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout-w936dp/image_slider_layout_item.xml" value="0.1875" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_add_college.xml" value="0.25" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_add_college_conclusion.xml" value="0.25" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_add_college_conclusion2.xml" value="0.25" />
@@ -17,6 +18,7 @@
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_choose_branch.xml" value="0.25" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_choose_branch_conclusion.xml" value="0.25" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_choose_branch_quiz.xml" value="0.25" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_college_details.xml" value="0.25" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_engineering_right_degree.xml" value="0.25" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_engineering_right_degree_conculsion.xml" value="0.25" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_engineering_right_degree_quiz.xml" value="0.25" />
@@ -29,6 +31,7 @@
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_post_grad.xml" value="0.25" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/activity_understanding_stream.xml" value="0.25" />
         <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/college_cardview.xml" value="0.25" />
+        <entry key="..\:/Users/darsh/AndroidStudioProjects/Engineering360/app/src/main/res/layout/image_slider_layout_item.xml" value="0.25" />
       </map>
     </option>
   </component>
