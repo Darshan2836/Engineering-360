@@ -15,7 +15,7 @@ import com.nutan.engineering.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ChooseBranchConclusion extends AppCompatActivity {
+public class  ChooseBranchConclusion extends AppCompatActivity {
 
     @BindView(R.id.csScore_id)
     TextView csScore;

@@ -45,6 +45,10 @@ dependencies {
     implementation "com.mikepenz:materialize:1.2.1"
     implementation 'com.mikepenz:google-material-typeface:3.0.1.2.original@aar'
 
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation 'com.github.florent37:glidepalette:2.1.2'
+
     implementation 'com.github.jaidevnaik5886:GenericDialog:2.3'
 
     implementation 'com.jakewharton:butterknife:10.2.1'

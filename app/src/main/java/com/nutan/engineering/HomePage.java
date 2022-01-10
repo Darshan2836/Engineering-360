@@ -55,9 +55,6 @@ public class HomePage extends AppCompatActivity {
     @BindView(R.id.enggCollege_id)
     CardView enggCollege;
 
-    @BindView(R.id.plan_id)
-    CardView plan;
-
 
     @BindView(R.id.colg_quality_checklist_id)
     CardView colg_qlty_cl;
@@ -107,14 +104,6 @@ public class HomePage extends AppCompatActivity {
                 startActivity(new Intent(HomePage.this, FindBestEngClg.class));
             }
         });
-
-        plan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(HomePage.this, PlanYourStudies.class));
-            }
-        });
-
 
 
         colg_qlty_cl.setOnClickListener(new View.OnClickListener() {

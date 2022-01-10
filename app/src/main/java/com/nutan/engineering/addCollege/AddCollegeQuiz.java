@@ -43,6 +43,7 @@ public class AddCollegeQuiz extends AppCompatActivity {
     Button opt5;
 
     public int count =1;
+    public int result = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +61,9 @@ public class AddCollegeQuiz extends AppCompatActivity {
         opt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(count==1){result+=1;}else if(count==2){result+=1;}else if(count==3){result+=1;}else if(count==4){result+=5;}else if(count==5){result+=5;}else if(count==6){result+=5;}
+                else if(count==7){result+=4;}else if(count==8){result+=4;}else if(count==10){result+=4;}else if(count==11){result+=5;}
+                else if(count==12){result+=5;}else if(count==13){result+=5;}else if(count==17){result+=5;}else if(count==18){result+=5;}
                 count++;
                 setQuestion(quiz,count);
             }
@@ -68,7 +71,9 @@ public class AddCollegeQuiz extends AppCompatActivity {
         opt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(count==1){result+=2;}else if(count==2){result+=2;}else if(count==3){result+=2;}
+              else if(count==9){result+=2;} else if(count==14){result+=2;}
+              else if(count==15){result+=3;}else if(count==16){result+=4;}
                 count++;
                 setQuestion(quiz,count);
             }
@@ -76,7 +81,8 @@ public class AddCollegeQuiz extends AppCompatActivity {
         opt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(count==1){result+=3;}else if(count==2){result+=3;}else if(count==3){result+=3;}else if(count==9){result+=3;}
+                else if(count==14){result+=3;}else if(count==15){result+=4;}else if(count==16){result+=5;}
                 count++;
                 setQuestion(quiz,count);
             }
@@ -84,7 +90,8 @@ public class AddCollegeQuiz extends AppCompatActivity {
         opt4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(count==1){result+=4;}else if(count==2){result+=4;}else if(count==3){result+=4;}else if(count==9){result+=3;}
+                else if(count==14){result+=4;}else if(count==15){result+=5;}
                 count++;
                 setQuestion(quiz,count);
             }
@@ -92,7 +99,7 @@ public class AddCollegeQuiz extends AppCompatActivity {
         opt5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if(count==1){result+=5;}else if(count==2){result+=5;}else if(count==3){result+=5;}
                 count++;
                 setQuestion(quiz,count);
             }
@@ -104,6 +111,7 @@ public class AddCollegeQuiz extends AppCompatActivity {
         if(count>quiz.size())
         {
             Intent intent = new Intent(AddCollegeQuiz.this, AddCollegeConclusion.class);
+            intent.putExtra("score", result);
             startActivity(intent);
             finish();
         }

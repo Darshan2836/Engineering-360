@@ -14,5 +14,45 @@
         android:theme="@style/MyToolbarStyle"
         app:title="Your Result"
         app:titleTextColor="@color/white" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="This college is :"
+            android:fontFamily="@font/nunito_regular"
+            android:textSize="15dp">
+        </TextView>
+        <TextView
+            android:id="@+id/clg_avgID"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Above Average"
+            android:textSize="40sp"
+            android:fontFamily="@font/bellerose"
+            android:textColor="@color/green">
+        </TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/homePageBtn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Go to Home Page"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false" />
 
 </RelativeLayout>

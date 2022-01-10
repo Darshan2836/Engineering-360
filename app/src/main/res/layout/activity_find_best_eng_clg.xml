@@ -7,12 +7,56 @@
     tools:context=".FindBestEngClg">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/bestEnggClg_id"
+        android:id="@+id/bestEnggClgToolbar_id"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         android:theme="@style/MyToolbarStyle"
         app:title="Engineering Colleges"
         app:titleTextColor="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/collegesProgressBar_id"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/primary"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="visible"
+        android:layout_below="@id/bestEnggClgToolbar_id"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/collegesProgressBar_id"
+        android:src="@drawable/ic_search_24">
+    </ImageView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/collegesSearchEditText_id"
+        style="@style/EditTextList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/collegesProgressBar_id"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:focusedByDefault="false"
+        android:fontFamily="@font/nunito"
+        android:hint="Search colleges"
+        android:imeOptions="actionDone"
+        android:paddingEnd="10dp"
+        android:textSize="16sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collegesRecyclerView_id"
+
+        android:layout_below="@id/collegesSearchEditText_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>

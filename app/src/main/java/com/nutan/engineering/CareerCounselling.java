@@ -30,9 +30,6 @@ public class CareerCounselling extends AppCompatActivity {
     @BindView(R.id.branch_id)
     CardView branch;
 
-    @BindView(R.id.postGrad_id)
-    CardView postGrad;
-
     @BindView(R.id.understandingStream_id)
     CardView understandingStream;
 
@@ -59,12 +56,6 @@ public class CareerCounselling extends AppCompatActivity {
             }
         });
 
-        postGrad.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(CareerCounselling.this, PostGrad.class));
-            }
-        });
 
         understandingStream.setOnClickListener(new View.OnClickListener() {
             @Override

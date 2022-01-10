@@ -20,6 +20,13 @@
         <item name="android:textColorSecondary">@color/md_white_1000</item>
     </style>
 
+    <style name="EditTextList" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:backgroundTint">@color/md_blue_grey_800</item>
+        <item name="android:textColorHighlight">@color/md_blue_200</item>
+    </style>
     <style name="NoBtn" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:text">Cancel</item>
         <item name="android:background">@color/md_red_800</item>
