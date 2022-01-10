@@ -58,7 +58,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:sliderAnimationDuration="300"
                 app:sliderAutoCycleDirection="right"
-                app:sliderAutoCycleEnabled="false"
+                app:sliderAutoCycleEnabled="true"
                 app:sliderCircularHandlerEnabled="true"
                 app:sliderIndicatorAnimationDuration="300"
                 app:sliderIndicatorGravity="center_horizontal|bottom"
@@ -67,7 +67,7 @@
                 app:sliderIndicatorRadius="1dp"
                 app:sliderIndicatorSelectedColor="#5a5a5a"
                 app:sliderIndicatorUnselectedColor="#fff"
-                app:sliderScrollTimeInSec="2"
+                app:sliderScrollTimeInSec="3"
                 app:sliderStartAutoCycle="true" />
 
             <androidx.appcompat.widget.AppCompatTextView

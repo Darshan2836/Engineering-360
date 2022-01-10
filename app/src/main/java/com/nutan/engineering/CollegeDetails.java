@@ -97,11 +97,11 @@ public class CollegeDetails extends AppCompatActivity {
 
                     sliderView.setSliderAdapter(collegeSliderAdapter);
                     sliderView.setIndicatorAnimation(IndicatorAnimations.SLIDE);
-                    sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
+                    //sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
                     sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
                     sliderView.setIndicatorSelectedColor(Color.BLACK);
                     sliderView.setIndicatorUnselectedColor(Color.GRAY);
-                    sliderView.setScrollTimeInSec(4); //set scroll delay in seconds :
+                    sliderView.setScrollTimeInSec(3); //set scroll delay in seconds :
                     sliderView.startAutoCycle();
 
                     collegeName.setText(collegeNameTxt);
