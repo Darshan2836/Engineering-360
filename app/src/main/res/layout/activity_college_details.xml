@@ -135,7 +135,6 @@
                 android:text=""
                 android:textColor="@color/textColorDark"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/productPageProductIdText_id"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/productPageProductIdText_id"
                 app:layout_constraintTop_toTopOf="@+id/productPageProductIdText_id" />
@@ -151,7 +150,7 @@
                 android:textColor="@color/textColorDark"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/productPageProductIdText_id" />
+                app:layout_constraintTop_toBottomOf="@+id/collegeAddress_id" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/collegeCET_id"
